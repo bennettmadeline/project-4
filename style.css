@@ -19,6 +19,15 @@ header {
 	padding-right: 0;
 }
 
+span {
+	color: white;
+	opacity: 70%;
+}
+
+span:hover {
+	opacity: 100%;
+}
+
 h1 {
 	font-size: 100px;
 	margin: 0;
@@ -34,6 +43,17 @@ p {
 a {
 	text-decoration: none;
 }
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+i:not(.fa-fire) {
+	font-size: 200%;
+}
+
 .navbar-nav {
 	color: white;
 	background: transparent;
@@ -62,9 +82,14 @@ a {
 	border-bottom: 1px solid rgba(225,225,225,.5);
 }
 
+.nav-contents {
+	color: white;
+}
+
 .navbar-brand {
 	color: rgba(225,225,225,.7);
 	padding-left: 20px;
+	letter-spacing: 5px;
 }
 
 .container-fluid {
@@ -80,6 +105,11 @@ a {
 	text-align: center;
 }
 
+.current {
+	color: yellowgreen;
+	opacity: 100%;
+}
+
 .round {
 	color: white;
 	font-size: 20px;
@@ -89,11 +119,22 @@ a {
 	border-radius: 30px;
 }
 
+.round:hover {
+	background-color: limegreen;
+}
+
+.row {
+	margin: 0;
+	width: 100%;
+}
+
 .first {
 	color: white;
 	background-color: yellowgreen;
 	display: flex;
 	justify-content: center;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .first h3 {
@@ -114,27 +155,34 @@ a {
 }
 
 .col-md-6 {
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 	margin-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+}
+
+.second {
+	padding-left: 20px;
 }
 
 .second h3, .third h3 {
 	font-size: 30px;
 	margin-top: 20px;
-	padding-top: 30px;
+	padding-top: 20px;
 
 }
 
 .second p, .third p {
 	font-size: 20px;
 	color: dimgray;
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
 .third {
 	color: white;
 	background-color: black;
-	padding-left: 30px;
+	padding-left: 10px;
 	padding-bottom: 20px;
 }
 
@@ -143,22 +191,26 @@ a {
 	background-color: white;
 }
 
+.third button:hover {
+	background-color: lightgray;
+}
+
 .oval {
 	width: 100%;
 	height: auto;
 	border-radius: 50%;
-	padding: 40px;
+	padding: 25px;
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
-
 
 .col-lg-4 {
 	height: 200px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
+	font-weight: bold;
 	color: white;
-	padding-top: 80px;
+	text-shadow: 0px 0px 40px black;
+	padding-top: 60px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -176,8 +228,64 @@ a {
 	background-image: url('./pencil_sharpener.jpg');
 }
 
-hover:.trio-1 div, hover:.trio-2 div, hover:.trio-3 div{
+.trio-1:hover, .trio-2:hover, .trio-3:hover {
 	color: white;
+	background-size: 110%;
+	border: 10px solid rgba(225,225,225,0.4);
+}
+
+.trio:hover {
+	color: white;
+}
+
+.fifth {
+	align-items: center;
+	text-align: center;
+	padding: 20px 20px;
+}
+
+.fifth h3 {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 15px;
+
+}
+
+.fifth p {
+	font-size: 20px;
+	text-align: center;
+	color: dimgray;
+}
+
+.fa-thumbtack {
+	color: yellowgreen;
+}
+
+.footer {
+	background-color: yellowgreen;
+	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: white;
+	font-size: 20px;
+}
+
+.footer h3 {
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 10px;
+}
+
+.copyright {
+	width: 100%;
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#navbarNavDropdown {
+	justify-content: flex-end;
+	padding-right: 20px;
 }
 
 /* Media Queries */
@@ -193,6 +301,15 @@ hover:.trio-1 div, hover:.trio-2 div, hover:.trio-3 div{
 	h1 {
 		font-size: 50px;
 		margin-top: 50px;
+	}
+
+	span {
+		color: rgba(0,0,0,1.0)
+	}
+
+	.logo {
+		color: yellowgreen;
+		letter-spacing: 1px;
 	}
 
 	.header {

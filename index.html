@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap" rel="stylesheet"> 
 
   	<!-- Font Awesome (icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>	
 
@@ -28,10 +29,10 @@
 <header class="container-fluid">
 
 <nav class="navbar navbar-expand-md navbar-light">
-  <div class="container-fluid navbar">
+  <div class="container-fluid navbar nav-contents">
     <a class="navbar-brand" href="#">
-      <span>i</span>
-      LOGO
+      <span class="logo"><i class="fas fa-fire"></i></span>
+      <span class="logo">LOGO</span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -39,14 +40,14 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"><span class="current">Home</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Products</a>
+          <a class="nav-link" href="#"><span>Products</span></a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Services
+            <span>Services</span>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Engage</a></li>
@@ -55,7 +56,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#"><span>Contact</span></a>
         </li>
       </ul>
     </div>
@@ -72,8 +73,7 @@
 
   <section class="container-fluid first">
   	<div class="row first">
-  	 <!-- icon here -->
-
+  	 <i class="fas fa-apple-alt"></i>
   	 <h3>Completely synergize resource taxing relationships</h3>
   	 <p>Profesionally cultivate one-to-one ustomer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
   	</div>
@@ -86,7 +86,7 @@
   		</div>
   		<div class="col-md-6">
   			<h3>Best in Class</h3>
-  			<p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.<p>
+  			<p>Holistically predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.<p>
   			<button class="round">CLASSIFY IT</button>
   		</div>
   </section>
@@ -106,36 +106,36 @@
   <section class="container-fluid">
   	<div class="row wrapper fourth">
   		<a href="#" class="col-lg-4 trio-1">
-        <div>Unleash</div>
+        <div class="trio">Unleash</div>
       </a>
   		<a href="#" class="col-lg-4 trio-2">
-        <div>Synergize</div>
+        <div class="trio">Synergize</div>
       </a>
   		<a href="#" class="col-lg-4 trio-3">
-        <div>Procrastinate</div>
+        <div class="trio">Procrastinate</div>
       </a>
   	</div> 	
   </section>
 
-  <section class="container-fluid">
-  	<div>
-  		<!--thumbtack icon here-->
+  <section class="container-fluid fifth">
+  	<div class="fifth">
+  		<i class="fas fa-thumbtack"></i>
   		<h3>Sanity Check</h3>
-  		<p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+  		<p>Holistically predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
   		<button class="round">CHECK NOW</button>
   	</div>
   </section>
 
-  <footer class="container-fluid">
-  	<div class="row">
+  <footer>
+  	 <div class="footer">        
   		<h3>Contact Us</h3>
-  		<!-- phone icon here-->
-  		<p>+1(23) 456 7890</p>
-  		<!-- envelope icon here-->
+  	  <i class="fas fa-phone-alt"></i>
+  	  <p>+1(23) 456 7890</p>
+  		<i class="fas fa-envelope"></i>
   		<p>info@example.com</p>
-  	</div>
-  	<div class="row">
-  		<p>Copyright © Example.com 2015</p>
+    </div>
+  	<div class="copyright">
+  	  <p>Copyright © Example.com 2015</p>
   	</div>
   </footer>
 </body>
