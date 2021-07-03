@@ -30,6 +30,10 @@ p {
 	margin-top: 15px;
 	margin-bottom: 25px;
 }
+
+a {
+	text-decoration: none;
+}
 .navbar-nav {
 	color: white;
 	background: transparent;
@@ -139,7 +143,6 @@ p {
 	background-color: white;
 }
 
-
 .oval {
 	width: 100%;
 	height: auto;
@@ -147,6 +150,34 @@ p {
 	padding: 40px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+
+
+.col-lg-4 {
+	height: 200px;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	padding-top: 80px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.trio-1 {
+	background-image: url('./writing.jpg');
+}
+
+.trio-2 {
+	background-image:  url('./concert.jpg');
+}
+
+.trio-3 {
+	background-image: url('./pencil_sharpener.jpg');
+}
+
+hover:.trio-1 div, hover:.trio-2 div, hover:.trio-3 div{
+	color: white;
 }
 
 /* Media Queries */
